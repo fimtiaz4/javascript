@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var side1 = 2;
+		var side2 = 7;
+		var side3 = 9;
+
+		if (side1> side2 && side1>side3) {
+			var big =side1;
+		}
+		if (side2> side1 && side2>side3) {
+			var big = side2;
+		}
+		if (side3>side1 && side3 > side2) {
+			var big = side3;
+		}
+
+		var sum1 = side1 + side2;
+		var sum2 = side1 + side3;
+		var sum3 = side2 + side2;
+
+
+		
+		if (sum1 <big ||
+			sum2 <big ||
+			sum3 <big) {
+			document.write("It is not possible to create a triangle");
+		}
+		
+		else {
+				document.write("It is possible to create a triangle");
+			}
+
+
+		
+		
+		
+		
+
+
+	</script>
+
+</body>
+</html>

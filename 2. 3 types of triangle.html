@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var side1 = 4;
+		var side2 = 4;
+		var side3 = 4;
+		if (side1> side2 && side1>side3) {
+			var big =side1;
+		}
+		if (side2> side1 && side2>side3) {
+			var big = side2;
+		}
+		if (side3>side1 && side3 > side2) {
+			var big = side3;
+		}
+		
+		if (big>side1+side2 ||
+			big >side2+side3||
+			big > side1+side3) {
+			document.write("With this lenght to form a triangle is not possible");
+		}
+		else {
+			if(side1==side2 && side1==side3 && side2==side3 ) {
+				document.write("This is equilateral triangle");
+			}
+
+
+			else if (side1==side2|| 
+			side1==side3 || 
+			side2==side3)
+			{
+			document.write("This is isosceles triangle");
+			}
+
+			else if (side1!=side2 &&
+					side1!=side3 &&
+					side2!=side3) {
+				document.write("This is scalene  triangle");
+			}
+			}
+
+
+		
+		
+		
+		
+
+
+	</script>
+
+</body>
+</html>

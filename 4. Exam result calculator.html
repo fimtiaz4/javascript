@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		 var bangla = 59;
+		 var english = 95;
+		 var math = 99;
+		 var islam = 92;
+		 var social = 48;
+		 var science = 90;
+
+		 var total = bangla + english +math + islam + social + science;
+
+		 document.write("Total Marks: " +total );
+
+		 var avarage = parseInt(total/6);
+		 document.write("<br> Avarage Marks : "+ avarage );
+
+		 if (bangla<33 || english<33 || math<33 || islam<33 || social<33 || science<33) {
+		 	document.write(" You have failed!");
+		 }
+		 else{
+		 	if (avarage>=80) {
+		 	document.write("<br> Grade A+");
+		 }
+		 if (avarage>=70 && avarage <80) {
+		 	document.write("<br> Grade A");
+		 }
+		 if (avarage>=60 && avarage <70) {
+		 	document.write("<br> Grade B");
+		 }
+		 if (avarage>=50 && avarage <60) {
+		 	document.write("<br> Grade C");
+		 }
+		 if (avarage>=40 && avarage <50) {
+		 	document.write("<br> Grade D");
+		 }
+		 if (avarage>=33 && avarage <40) {
+		 	document.write("<br> Grade E");
+		 }
+
+		 }
+
+		 
+		 	
+
+	</script>
+
+</body>
+</html>
